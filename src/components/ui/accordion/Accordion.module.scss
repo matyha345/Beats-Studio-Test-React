@@ -1,0 +1,68 @@
+@import 'src/assets/styles/variables.scss';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.body {
+		margin-top: 3px;
+		border: 1px solid black;
+		padding: 15px;
+		border-radius: 30px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		.inner {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 12px;
+			font-weight: 700;
+			color: black;
+			cursor: pointer;
+
+			.heading {
+				display: flex;
+				align-items: center;
+
+				.icon {
+					max-width: 100%;
+				}
+				.title {
+					margin-left: 8px;
+					font-family: $fontTitle;
+					font-weight: 700;
+					font-size: 14px;
+					line-height: 110%;
+					text-transform: uppercase;
+					color: $CodGray;
+				}
+			}
+		}
+
+		.text {
+			max-width: 336px;
+			// text-wrap: balance;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 130%;
+			color: $CodGrayCC;
+			overflow: hidden;
+			transition: max-height 0.2s ease;
+			max-height: 0;
+			opacity: 0;
+			transition-delay: 0.1s;
+		}
+		.active {
+			margin-top: 20px;
+			opacity: 1;
+			transition-delay: 0s;
+		}
+		.collapsed {
+			opacity: 0;
+		}
+	}
+}

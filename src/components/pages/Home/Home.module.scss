@@ -1,0 +1,147 @@
+@import 'src/assets/styles/variables.scss';
+
+.wrapper {
+	background-color: $bgMainWhite;
+	.reviews {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 24px;
+
+		img {
+			margin-left: 10px;
+			max-width: 100%;
+		}
+		.reviewsText {
+			font-size: 12px;
+			line-height: 130%;
+			color: $codGray;
+		}
+	}
+
+	.swiper {
+		padding: 0 10px;
+		.swiperTitle {
+			margin-top: 24px;
+		}
+
+		.swiperTitle {
+			display: flex;
+			align-items: center;
+			font-family: 'Neuzeit Grotesk', sans-serif;
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 128%;
+
+			span {
+				margin-left: 8px;
+				margin-top: -8px;
+				font-weight: 400;
+				font-size: 28px;
+			}
+		}
+
+		.swiperText {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 130%;
+			color: $CodGrayCC;
+		}
+
+		.swiperPrise {
+			margin-top: 17px;
+			display: flex;
+			align-items: center;
+
+			.swiperNumber {
+				font-family: $fontTitle;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 100%;
+				text-transform: capitalize;
+				text-decoration: line-through;
+				color: $CodGrayCC;
+
+				&:nth-child(2) {
+					margin-left: 3px;
+					font-weight: 600;
+					font-size: 40px;
+					color: #282828;
+					text-decoration: none;
+				}
+			}
+
+			.swiperDiscount {
+				margin-left: 8px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 40px;
+				width: 93px;
+				height: 32px;
+				background: linear-gradient(106deg, #69b1c9 0%, #6081c3 50.64%, #5558af 100%);
+				span {
+					font-family: $fontTitle;
+					font-weight: 600;
+					font-size: 20px;
+					line-height: 24px;
+					text-align: center;
+					color: #fff;
+				}
+			}
+		}
+		.colorHandler {
+			margin-top: 12px;
+			display: flex;
+			flex-direction: column;
+
+			.colorHandlerTitle {
+				font-family: $fontTitle;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 110%;
+				text-transform: uppercase;
+				color: $CodGray;
+			}
+
+			.colorHandlerInner {
+				margin-top: 6px;
+				display: flex;
+			}
+		}
+	}
+
+	.button {
+		margin-top: 16px;
+		padding: 0 10px;
+	}
+
+	.informationSize {
+		margin-top: 24px;
+		padding: 0 10px;
+	}
+
+	.accordion {
+		margin-top: 24px;
+		padding: 0 10px;
+	}
+
+	.swiperReviews {
+		margin-top: 50px;
+		margin-bottom: 49px;
+		padding: 15px 10px;
+
+		background-color: #f7f7f7;
+
+		border-radius: 30px;
+
+		.swiperReviewsTitle {
+			text-align: center;
+			font-family: $fontTitle;
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 115%;
+			color: $CodGray;
+		}
+	}
+}

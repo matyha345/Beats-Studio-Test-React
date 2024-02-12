@@ -1,0 +1,9 @@
+@import './_reset.scss';
+@import './_variables.scss';
+
+html,body{
+    font-family: $fontBase;
+    font-weight: 400;
+
+    background-color: #1E1E1E;
+}

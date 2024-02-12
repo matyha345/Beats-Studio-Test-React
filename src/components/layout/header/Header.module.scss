@@ -1,0 +1,40 @@
+@import 'src/assets/styles/variables.scss';
+
+.wrapper {
+	background-color: $bgMain;
+	padding-top: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: $textMain;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.logo {
+		max-width: 100%;
+	}
+
+	.item {
+		display: flex;
+		align-items: center;
+
+		.list {
+			margin-left: 40px;
+			transition: all 0.3s;
+			color: $textColorLink;
+            
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:hover {
+				color: $textMain;
+			}
+			.link {
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 130%;
+			}
+		}
+	}
+}

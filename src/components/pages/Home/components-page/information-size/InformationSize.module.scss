@@ -1,0 +1,84 @@
+@import 'src/assets/styles/variables.scss';
+
+.wrapper {
+	background: #f7f7f7;
+	border-radius: 30px;
+	padding: 15px;
+	.block {
+		display: flex;
+		align-items: center;
+
+		.title {
+			margin-left: 10px;
+			font-family: $fontTitle;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 110%;
+			text-transform: uppercase;
+			color: $CodGray;
+		}
+	}
+
+	.text {
+		margin: 4px 0;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 130%;
+		color: $CodGrayCC;
+	}
+
+	.textBottom {
+		margin-top: 4px;
+		margin-bottom: 14px;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 130%;
+		color: $CodGrayCC;
+	}
+
+	.bottom {
+		padding-top: 16px;
+		border-top: 1px solid #dcdcdc;
+
+		.title {
+			font-family: $fontTitle;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 110%;
+			text-transform: uppercase;
+			color: $CodGray;
+			margin-bottom: 12px;
+		}
+		.titleCase{
+			font-family: $fontTitle;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 110%;
+			text-transform: uppercase;
+			color: $CodGray;
+			margin-top: 12px;
+			margin-bottom: 12px;
+		}
+
+		.bottomText {
+			margin-top: 8px;
+			display: flex;
+			align-items: center;
+
+			.bottomLeft {
+				width: 180px;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 130%;
+				color: $CodGray;
+			}
+			.bottomRight {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 130%;
+				color: $CodGrayCC;
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+@import 'src/assets/styles/variables.scss';
+
+
+.main {
+    margin-top: 16px;
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.content {
+			border: 1px solid #f2f2f2;
+            background-color: $bgMainWhite;
+			border-radius: 30px;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			padding-left: 14px;
+			padding-right: 14px;
+			width: 290px;
+			height: 170px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.inner {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				height: 100%;
+
+				.text {
+					font-family: var(--font-family);
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 130%;
+					color: $CodGrayCC;
+				}
+
+				.nameReview {
+					margin-top: auto;
+					display: flex;
+					align-items: center;
+
+
+                    padding-top: 10px;
+                    border-top: 1px solid #DCDCDC;
+
+					img {
+						max-width: 100%;
+					}
+
+					.title {
+                        max-width: 200px;
+						margin-left: 10px;
+						text-wrap: balance;
+						font-family: $fontTitle;
+						font-weight: 700;
+						font-size: 16px;
+						line-height: 110%;
+						color: $CodGray;
+					}
+				}
+			}
+		}
+	}
+}
